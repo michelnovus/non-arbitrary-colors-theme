@@ -1,0 +1,30 @@
+{
+  "name": "non-arbitrary-colors-theme",
+  "displayName": "Non Arbitrary Colors Theme",
+  "description": "Non-arbitrary colors theme for Visual Studio Code.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.2"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Non arbitrary colors theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/main-theme.json"
+      }
+    ]
+  },
+  "author": {
+    "name": "Michel Novus",
+    "email": "michelnovus@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michelnovus/non-arbitrary-colors-theme"
+  }
+}
