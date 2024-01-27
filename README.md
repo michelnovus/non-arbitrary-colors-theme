@@ -34,3 +34,6 @@
 
 ### **Rust code example**
 ![rust-code-example-1](./assets/rust_random_example.jpg)
+
+> [!NOTE]
+> Look at `vscode-settings` branch to get the editor JSON User Settings.
