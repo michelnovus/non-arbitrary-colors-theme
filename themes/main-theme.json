@@ -66,7 +66,7 @@
 		"editorCursor.background": "#1f1f1f",
 		"editorCursor.foreground": "#f2f2f2",
 		"editorError.border": "#00000000",
-		"editorError.foreground": "#fe413f",
+		"editorError.foreground": "#fe413faa",
 		"editorGroup.background": "#161616",
 		"editorGroup.border": "#161616",
 		"editorGroup.dropBackground": "#ffffff12",
@@ -121,7 +121,7 @@
 		"editorUnnecessaryCode.border": "#88888888",
 		"editorUnnecessaryCode.opacity": "#e0e0e088",
 		"editorWarning.border": "#00000000",
-		"editorWarning.foreground": "#cccc00",
+		"editorWarning.foreground": "#ffff00aa",
 		"editorWhitespace.foreground": "#363636",
 		"editorWidget.background": "#131313",
 		"editorWidget.foreground": "#e0e0e0",
@@ -137,9 +137,9 @@
 		"gitDecoration.conflictingResourceForeground": "#fe413f",
 		"gitDecoration.deletedResourceForeground": "#fe413f",
 		"gitDecoration.ignoredResourceForeground": "#777777",
-		"gitDecoration.modifiedResourceForeground": "#b3b42b",
+		"gitDecoration.modifiedResourceForeground": "#b3b300",
 		"gitDecoration.submoduleResourceForeground": "#2bb3b4",
-		"gitDecoration.untrackedResourceForeground": "#008000",
+		"gitDecoration.untrackedResourceForeground": "#5cd65c",
 		"input.background": "#363636",
 		"input.border": "#363636",
 		"input.foreground": "#dddddd",
@@ -317,6 +317,10 @@
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
+		"comment.documentation": {
+			"foreground": "#707070",
+			"fontStyle": "italic"
+		},
 		"namespace": "#ab60d6",
 		"type": "#1ab2ff",
 		"type.defaultLibrary": "#1ab2ff",
@@ -332,6 +336,14 @@
 		"variable": "#e0e0e0",
 		"variable.readonly": "#e0e0e0",
 		"variable.readonly.defaultLibrary": "#e0e0e0",
+		"formatSpecifier": "#e0e0e0",
+		"lifetime": {
+			"foreground": "#858585",
+			"fontStyle": "italic"
+		},
+		"typeParameter:rust": {
+			"foreground": "#1ab2ff"
+		},
 		"parameter": {
 			"foreground": "#858585",
 			"fontStyle": "italic"
@@ -343,6 +355,10 @@
 		"selfParameter": {
 			"foreground": "#e0e0e0",
 			"fontStyle": ""
+		},
+		"*.attribute:rust": {
+			"foreground": "#858585",
+			"fontStyle": "italic"
 		},
 		"class.decorator": {
 			"foreground": "#858585",
@@ -396,7 +412,9 @@
 			"name": "numbers",
 			"scope": [
 				"constant.numeric",
-				"keyword.operator.arithmetic.python"
+				"string.quoted.single.char.rust",
+				"keyword.operator.arithmetic.python",
+				"string.quoted.binary.single.python"
 			],
 			"settings": {
 				"foreground": "#529a45"
@@ -491,86 +509,5 @@
 				"foreground": "#dd500e"
 			}
 		}
-		// ==================================================
-		// {
-		// 	"name": "directives",
-		// 	"scope": [
-		// 		"punctuation.definition.attribute.rust",
-		// 		"punctuation.brackets.attribute.rust",
-		// 		"meta.attribute.rust"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#707070"
-		// 	}
-		// },
-		// {
-		// 	"name": "struct",
-		// 	"scope": [
-		// 		"entity.name.type.struct.rust",
-		// 		"entity.name.type.enum.rust",
-		// 		"entity.name.type.enum.rust",
-		// 		"support.class"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#1ab2ff"
-		// 	}
-		// },
-		// {
-		// 	"name": "builtin",
-		// 	"scope": [
-		// 		"entity.name.type.numeric.rust"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#1ab2ff"
-		// 	}
-		// },
-		// {
-		// 	"name": "enumerations and constant lang",
-		// 	"scope": [
-		// 		"entity.name.type.enum.rust",
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#ab60d6"
-		// 	}
-		// },
-		// {
-		// 	"name": "char",
-		// 	"scope": [
-		// 		"string.quoted.single.char.rust"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#529a45"
-		// 	}
-		// },
-		// {
-		// 	"name": "modules",
-		// 	"scope": [
-		// 		"entity.name.namespace"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#ab60d6"
-		// 	}
-		// },
-		// {
-		// 	"name": "interpolation",
-		// 	"scope": [
-		// 		"punctuation.definition.interpolation.rust",
-		// 		"meta.interpolation.rust"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#e0e0e0"
-		// 	}
-		// },
-		// {
-		// 	"name": "lifetimes",
-		// 	"scope": [
-		// 		"punctuation.definition.lifetime.rust",
-		// 		"entity.name.type.lifetime.rust"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#707070",
-		// 		"fontStyle": "italic"
-		// 	}
-		// }
 	]
 }
