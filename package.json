@@ -13,7 +13,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "Non arbitrary colors theme",
+        "label": "Non Arbitrary Colors Theme",
         "uiTheme": "vs-dark",
         "path": "./themes/main-theme.json"
       }

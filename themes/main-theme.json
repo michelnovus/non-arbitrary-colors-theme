@@ -94,11 +94,11 @@
 		"editorMarkerNavigationError.background": "#fe413f",
 		"editorMarkerNavigationInfo.background": "#007acc",
 		"editorMarkerNavigationWarning.background": "#cccc00",
-		"editorOverviewRuler.addedForeground": "#86b42b",
+		"editorOverviewRuler.addedForeground": "#008000",
 		"editorOverviewRuler.border": "#00000000",
 		"editorOverviewRuler.bracketMatchForeground": "#666666",
 		"editorOverviewRuler.currentContentForeground": "#ae81ff",
-		"editorOverviewRuler.deletedForeground": "#c4265e",
+		"editorOverviewRuler.deletedForeground": "#fe413f",
 		"editorOverviewRuler.errorForeground": "#fe413f",
 		"editorOverviewRuler.findMatchForeground": "#666666",
 		"editorOverviewRuler.incomingContentForeground": "#66d9ef",
@@ -135,11 +135,11 @@
 		"foreground": "#dddddd",
 		"gitDecoration.addedResourceForeground": "#007acc",
 		"gitDecoration.conflictingResourceForeground": "#fe413f",
-		"gitDecoration.deletedResourceForeground": "#c4265e",
+		"gitDecoration.deletedResourceForeground": "#fe413f",
 		"gitDecoration.ignoredResourceForeground": "#777777",
 		"gitDecoration.modifiedResourceForeground": "#b3b42b",
 		"gitDecoration.submoduleResourceForeground": "#2bb3b4",
-		"gitDecoration.untrackedResourceForeground": "#86b42b",
+		"gitDecoration.untrackedResourceForeground": "#008000",
 		"input.background": "#363636",
 		"input.border": "#363636",
 		"input.foreground": "#dddddd",
@@ -249,8 +249,8 @@
 		"statusBar.debuggingBorder": "#007acc",
 		"statusBar.debuggingForeground": "#e0e0e0",
 		"statusBar.foreground": "#e0e0e0",
-		"statusBar.noFolderBackground": "#000000",
-		"statusBar.noFolderBorder": "#000000",
+		"statusBar.noFolderBackground": "#101010",
+		"statusBar.noFolderBorder": "#101010",
 		"statusBar.noFolderForeground": "#e0e0e0",
 		"statusBarItem.activeBackground": "#ffffff16",
 		"statusBarItem.hoverBackground": "#ffffff20",
@@ -462,6 +462,35 @@
 				"foreground": "#dd500e"
 			}
 		},
+		{
+			"name": "keys {JSON, TOML}",
+			"scope": [
+				"support.type.property-name.json",
+				"support.type.property-name.table.toml"
+			],
+			"settings": {
+				"foreground": "#4da6ff"
+			}
+		},
+		{
+			"name": "value string {JSON}",
+			"scope": [
+				"string.quoted.double.json"
+			],
+			"settings": {
+				"foreground": "#c0795d"
+			}
+		},
+		{
+			"name": "constants {JSON, TOML}",
+			"scope": [
+				"constant.language.json.comments",
+				"constant.language.boolean.toml"
+			],
+			"settings": {
+				"foreground": "#dd500e"
+			}
+		}
 		// ==================================================
 		// {
 		// 	"name": "directives",
@@ -480,7 +509,6 @@
 		// 		"entity.name.type.struct.rust",
 		// 		"entity.name.type.enum.rust",
 		// 		"entity.name.type.enum.rust",
-		// 		"support.type.property-name.table.toml",
 		// 		"support.class"
 		// 	],
 		// 	"settings": {
@@ -500,8 +528,6 @@
 		// 	"name": "enumerations and constant lang",
 		// 	"scope": [
 		// 		"entity.name.type.enum.rust",
-		// 		"constant.language.json.comments",
-		// 		"constant.language.boolean.toml"
 		// 	],
 		// 	"settings": {
 		// 		"foreground": "#ab60d6"
