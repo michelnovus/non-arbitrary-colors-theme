@@ -1,6 +1,7 @@
 # Non Arbitrary Colors Theme for VSCode
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Marketplace](https://img.shields.io/badge/Marketplace-blue?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=michelnovus.non-arbitrary-colors-theme)
 
 > Theme based on: [Monokai Night Theme](https://github.com/fabiospampinato/vscode-monokai-night.git) of *@Fabio Spampinato*.
 
@@ -29,18 +30,33 @@
 - ![#e0e0e0](https://placehold.co/15x15/e0e0e0/e0e0e0.png) `#e0e0e0`: main foreground
 - ![#121212](https://placehold.co/15x15/121212/121212.png) `#121212`: main background
 
+> [!NOTE]
+> Look at `vscode-settings` branch to get the editor JSON User Settings.
+
 ## Random screen examples
 
 ### **VSCode splash screen**
-![visual-studio-code-launch](./assets/vscode_launch.jpg)
-![json-and-visual-studio-code-interfaz](./assets/json_vscode_interfaz.jpg)
+![visual-studio-code-launch](./assets/vscode-home.png)
 
 ### **Python code example**
-![python-code-example-1](./assets/python_1.jpg)
-![python-code-example-2](./assets/python_2.jpg)
+![python-code-example](./assets/python-code.png)
 
 ### **Rust code example**
-![rust-code-example-1](./assets/rust_random_example.jpg)
+![rust-code-example-1](./assets/rust-code-1.png)
+![rust-code-example-2](./assets/rust-code-2.png)
 
-> [!NOTE]
-> Look at `vscode-settings` branch to get the editor JSON User Settings.
+### **Bash code example**
+![bash-code-example](./assets/shell.png)
+
+### **Slint code example**
+![slint-code-example](./assets/slint-code.png)
+
+### **TOML code example**
+![toml-example](./assets/toml-code.png)
+
+### **JSON example**
+![json-and-visual-studio-code-interfaz](./assets/json.png)
+
+### **XML example**
+![xml-text-example](./assets/xml.png)
+
