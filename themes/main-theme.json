@@ -404,7 +404,19 @@
 		"property": "#e0e0e0",
 		"property.readonly": "#e0e0e0",
 		"event": "#d660b4",
-		"builtinConstant": "#ff7d39"
+		"builtinConstant": "#ff7d39",
+		"keyword:slint": "#ff7d39",
+		"property.definition:slint": {
+			"fontStyle": "italic"
+		},
+		"function.definition:slint": {
+			"fontStyle": "italic"
+		},
+		"type.definition:slint": {
+			"fontStyle": "italic"
+		},
+		"string:slint": "#c0795d",
+		"comment:slint": "#555555"
 	},
 	"tokenColors": [
 		{
@@ -423,7 +435,8 @@
 				"comment.block.rust",
 				"comment.line.double-slash.js",
 				"comment.line.number-sign.toml",
-				"string.quoted.docstring.multi.python"
+				"string.quoted.docstring.multi.python",
+				"comment.block.xml"
 			],
 			"settings": {
 				"foreground": "#555555"
@@ -526,7 +539,7 @@
 				"support.type.property-name.table.toml"
 			],
 			"settings": {
-				"foreground": "#4da6ff"
+				"foreground": "#a85de0"
 			}
 		},
 		{
@@ -546,6 +559,156 @@
 			],
 			"settings": {
 				"foreground": "#ff7d39"
+			}
+		},
+		{
+			"name": "shell keywords",
+			"scope": [
+				"storage.type.function.shell",
+				"keyword.control.if.shell",
+				"keyword.control.elif.shell",
+				"keyword.control.else.shell",
+				"keyword.control.then.shell",
+				"keyword.control.fi.shell",
+				"keyword.control.for.shell",
+				"keyword.control.while.shell",
+				"keyword.control.until.shell",
+				"keyword.control.do.shell",
+				"keyword.control.done.shell",
+				"keyword.control.in.shell",
+				"keyword.control.case.shell",
+				"keyword.control.esac.shell",
+				"keyword.operator.redirect.shell",
+				"keyword.operator.logical.shell",
+				"punctuation.definition.logical-expression.shell",
+				"keyword.operator.expansion.shell",
+				"punctuation.section.arithmetic.double.shell"
+			],
+			"settings": {
+				"foreground": "#ff7d39"
+			}
+		},
+		{
+			"name": "shell source",
+			"scope": [
+				"punctuation.definition.variable.shell"
+			],
+			"settings": {
+				"foreground": "#e0e0e0"
+			}
+		},
+		{
+			"name": "shell subshell",
+			"scope": [
+				"punctuation.definition.subshell.single.shell",
+				"storage.modifier.export.shell"
+			],
+			"settings": {
+				"foreground": "#a85de0"
+			}
+		},
+		{
+			"name": "shell positional parm",
+			"scope": [
+				"variable.parameter.positional.shell"
+			],
+			"settings": {
+				"foreground": "#4da6ff",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "shell string",
+			"scope": [
+				"string.quoted.double.shell"
+			],
+			"settings": {
+				"foreground": "#c0795d"
+			}
+		},
+		{
+			"name": "shell raw string",
+			"scope": [
+				"string.quoted.single.shell"
+			],
+			"settings": {
+				"foreground": "#529a45"
+			}
+		},
+		{
+			"name": "shell comment",
+			"scope": [
+				"comment.line.number-sign.shell"
+			],
+			"settings": {
+				"foreground": "#555555"
+			}
+		},
+		{
+			"name": "variables inside string",
+			"scope": [
+				"variable.other.normal.shell"
+			],
+			"settings": {
+				"foreground": "#e0e0e0",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "commands",
+			"scope": [
+				"entity.name.function.shell",
+				"entity.name.command.shell"
+			],
+			"settings": {
+				"foreground": "#e54e4e"
+			}
+		},
+		{
+			"name": "xml namespace",
+			"scope": [
+				"entity.other.attribute-name.namespace.xml"
+			],
+			"settings": {
+				"foreground": "#529a45"
+			}
+		},
+		{
+			"name": "xml tag",
+			"scope": [
+				"entity.name.tag.xml",
+				"entity.name.tag.localname.xml"
+			],
+			"settings": {
+				"foreground": "#e54e4e"
+			}
+		},
+		{
+			"name": "xml attribute",
+			"scope": [
+				"entity.other.attribute-name.xml",
+				"entity.other.attribute-name.localname.xml"
+			],
+			"settings": {
+				"foreground": "#a85de0"
+			}
+		},
+		{
+			"name": "xml attribute value",
+			"scope": [
+				"string.quoted.double.xml"
+			],
+			"settings": {
+				"foreground": "#c0795d"
+			}
+		},
+		{
+			"name": "xml tag punctuation",
+			"scope": [
+				"punctuation.definition.tag.xml"
+			],
+			"settings": {
+				"foreground": "#4da6ff"
 			}
 		}
 	]
