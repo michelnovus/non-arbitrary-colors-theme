@@ -1,9 +1,13 @@
 {
     // === Configuraciones de Visual Studio Code ===
+    "workbench.editor.editorActionsLocation": "titleBar",
+    "window.menuBarVisibility": "toggle",
+    "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+    "editor.minimap.renderCharacters": false,
+    "window.customTitleBarVisibility": "never",
     "telemetry.telemetryLevel": "off",
     "window.restoreWindows": "none",
     "explorer.confirmDragAndDrop": false,
-    "breadcrumbs.enabled": false,
     "emmet.triggerExpansionOnTab": true,
     "typescript.suggest.paths": false,
     "javascript.suggest.paths": false,
@@ -15,38 +19,41 @@
         "**/.venv": true,
         "**/*.egg-info": true,
         "**/.directory": true,
-        "**/.vscode": true
+        "**/.vscode": true,
+        "**/target": true,
     },
-    "files.dialog.defaultPath": "/home/michel/dev-src/proyectos",
+    "files.dialog.defaultPath": "/home/michel/devapps",
     "files.associations": {
-        "": ""
+        "PKGBUILD": "plaintext",
+        "*.ignore": "plaintext",
+        "config": "plaintext"
     },
-    // "workbench.colorTheme": "Default Dark Modern",
     "workbench.colorTheme": "Non Arbitrary Colors Theme",
-    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.iconTheme": "vscode-icons",
     "workbench.sideBar.location": "right",
+    "editor.scrollbar.horizontal": "auto",
+    "editor.scrollbar.horizontalScrollbarSize": 24,
     "workbench.startupEditor": "none",
-    "workbench.editor.showTabs": "single",
+    "workbench.editor.showTabs": "none",
     "workbench.activityBar.location": "hidden",
     // "workbench.editorAssociations": {
     //     "*.pdf": "latex-workshop-pdf-hook"
     // },
     "workbench.colorCustomizations": {
         "editorBracketHighlight.foreground1": "#e0e0e0",
-        "editorBracketHighlight.foreground2": "#ffb835",
-        "editorBracketHighlight.foreground3": "#a85116",
-        "editorBracketHighlight.foreground4": "#c4421b",
-        "editorBracketHighlight.foreground5": "#753333",
-        "editorBracketHighlight.foreground6": "#813370"
+        "editorBracketHighlight.foreground2": "#00a7bd",
+        "editorBracketHighlight.foreground3": "#00a308",
+        "editorBracketHighlight.foreground4": "#ffb835",
+        "editorBracketHighlight.foreground5": "#8cc900",
+        "editorBracketHighlight.foreground6": "#ff2929"
     },
-    "window.menuBarVisibility": "toggle",
     "security.workspace.trust.untrustedFiles": "open",
     // "editor.fontFamily": "'Monaspace Neon', monospace, 'JetBrainsMono Nerd Font', 'RobotoMono Nerd Font', 'AnonymousPro Nerd Font', monospace",
     // "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
     // "editor.fontWeight": "500",
     // "editor.fontSize": 17.5,
     // == != => -> === && :: ...
-    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Cascadia Code', 'Monaspace Krypton', 'JetBrainsMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
     "editor.fontLigatures": true,
     "editor.fontWeight": "500",
     "editor.fontSize": 19,
@@ -54,17 +61,19 @@
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
     "terminal.integrated.fontSize": 14,
     "editor.tabSize": 4,
+    "editor.detectIndentation": true,
+    "editor.insertSpaces": true,
     "editor.formatOnSave": true,
     "editor.smoothScrolling": true,
     "editor.bracketPairColorization.enabled": false,
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "editor.guides.highlightActiveBracketPair": false,
     "editor.matchBrackets": "never",
-    "editor.minimap.enabled": true,
+    "editor.minimap.autohide": false,
     "editor.minimap.showSlider": "always",
-    "editor.minimap.renderCharacters": false,
-    "editor.minimap.size": "proportional",
     "editor.suggest.preview": true,
+    "editor.hover.enabled": true,
+    "editor.hover.delay": 250,
     // "editor.suggest.selectionMode": "whenTriggerCharacter",
     "editor.scrollbar.vertical": "hidden",
     "editor.overviewRulerBorder": false,
@@ -72,7 +81,7 @@
     "editor.glyphMargin": false,
     "editor.cursorStyle": "block",
     "editor.cursorBlinking": "solid",
-    "editor.suggestSelection": "recentlyUsed",
+    "editor.suggestSelection": "first",
     "editor.hideCursorInOverviewRuler": true,
     "editor.cursorSmoothCaretAnimation": "off",
     "editor.columnSelection": false,
@@ -88,26 +97,36 @@
         "strings": "off"
     },
     "editor.rulers": [
-        80,
-        72
+        80
     ],
     "editor.wordWrap": "off",
-    "editor.wordWrapColumn": 120,
+    "editor.wordWrapColumn": 80,
     "editor.semanticHighlighting.enabled": true,
+    // === Grubox Material ===
+    "gruvboxMaterial.darkContrast": "hard",
+    "gruvboxMaterial.darkPalette": "material",
+    "gruvboxMaterial.darkWorkbench": "flat",
+    "gruvboxMaterial.darkCursor": "white",
+    // "gruvboxMaterial.diagnosticTextBackgroundOpacity": "50%",
+    "gruvboxMaterial.highContrast": true,
+    "gruvboxMaterial.italicComments": true,
+    "gruvboxMaterial.italicKeywords": true,
     // === configuraciones generales de Python ===
-    "python.defaultInterpreterPath": "/usr/bin/python",
+    "python.defaultInterpreterPath": "/usr/bin/python3",
     "python.venvPath": ".venv",
     "python.terminal.executeInFileDir": true,
     "python.languageServer": "Pylance",
     "python.analysis.importFormat": "absolute",
-    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.typeCheckingMode": "standard",
     "python.analysis.inlayHints.pytestParameters": true,
-    "python.formatting.provider": "none",
     "[python]": {
-        "editor.formatOnSave": true,
         "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
     },
     "python.analysis.completeFunctionParens": true,
+    "python.analysis.inlayHints.callArgumentNames": "off",
+    "python.analysis.inlayHints.variableTypes": false,
+    "python.analysis.inlayHints.functionReturnTypes": true,
     // "python.linting.pycodestyleEnabled": true,
     // "python.linting.enabled": true,
     // "python.linting.lintOnSave": true,
@@ -121,9 +140,14 @@
     "black-formatter.args": [
         "--line-length=80",
     ],
+    // === configuraciones de Java ===
+    "java.debug.settings.enableRunDebugCodeLens": false,
     // === configuraciones generales de Rust ===
     "editor.inlayHints.enabled": "on",
+    "rust-analyzer.lens.run.enable": false,
+    "rust-analyzer.checkOnSave": true,
     "rust-analyzer.lens.enable": false,
+    "rust-analyzer.server.path": "/home/michel/.local/share/cargo/bin/rust-analyzer",
     "rust-analyzer.completion.autoimport.enable": false,
     "rust-analyzer.semanticHighlighting.punctuation.enable": true,
     "rust-analyzer.semanticHighlighting.punctuation.specialization.enable": true,
@@ -135,13 +159,19 @@
         "editor.formatOnSave": true,
         "editor.semanticHighlighting.enabled": true,
         "editor.inlayHints.enabled": "offUnlessPressed",
-        "editor.bracketPairColorization.enabled": false,
+        "editor.bracketPairColorization.enabled": true,
     },
     // === extensión: Git Graph ===
     "git-graph.repository.commits.showSignatureStatus": true,
     // === extensión: Indenticator ===
     "indenticator.width": 1,
     "indenticator.color.dark": "rgba(255,255,255,0.07)",
+    // === extensión: Subtle Brackets ===
+    "subtleBrackets.style": {
+        "borderWidth": "1px",
+        "borderColor": "#ffffff",
+        "borderStyle": "dotted dotted dotted dotted"
+    },
     // === extensión: TODO ===
     "todohighlight.isEnable": true,
     "todohighlight.keywords": [
@@ -153,7 +183,7 @@
         {
             "text": "# TODO:",
             "color": "black",
-            "backgroundColor": "#2fd1dd",
+            "backgroundColor": "#0079b9",
         },
         {
             "text": "# NOTE:",
@@ -166,9 +196,14 @@
             "backgroundColor": "#f72f2f",
         },
         {
-            "text": "# TEMP",
+            "text": "# Temp >>>",
             "color": "black",
-            "backgroundColor": "#ff6600",
+            "backgroundColor": "#00a3da",
+        },
+        {
+            "text": "# Temp <<<",
+            "color": "black",
+            "backgroundColor": "#00a3da",
         },
         {
             "text": "# DEBUG",
@@ -177,6 +212,51 @@
         },
         {
             "text": "# CHECKOUT",
+            "color": "black",
+            "backgroundColor": "#ff6600",
+        },
+        {
+            "text": "// FEATURE:",
+            "color": "#212121",
+            "backgroundColor": "#0079b9",
+        },
+        {
+            "text": "//TEST",
+            "color": "black",
+            "backgroundColor": "#119ca1",
+        },
+        {
+            "text": "//TODO:",
+            "color": "black",
+            "backgroundColor": "#2fd1dd",
+        },
+        {
+            "text": "//NOTE:",
+            "color": "black",
+            "backgroundColor": "#ffd382",
+        },
+        {
+            "text": "//FIXME",
+            "color": "white",
+            "backgroundColor": "#f72f2f",
+        },
+        {
+            "text": "// Temp >>>",
+            "color": "black",
+            "backgroundColor": "#00a3da",
+        },
+        {
+            "text": "// Temp <<<",
+            "color": "black",
+            "backgroundColor": "#00a3da",
+        },
+        {
+            "text": "//DEBUG",
+            "color": "white",
+            "backgroundColor": "#f72f2f",
+        },
+        {
+            "text": "//CHECKOUT",
             "color": "black",
             "backgroundColor": "#ff6600",
         }
@@ -196,9 +276,17 @@
         "yaml"
     ],
     // === extensión: Latex Workshop ===
+    "latex-workshop.latexindent.path": "/usr/bin/latexindent",
+    "latex-workshop.linting.chktex.exec.path": "/usr/bin/chktex",
+    "latex-workshop.linting.lacheck.exec.path": "/usr/bin/lacheck",
     "latex-workshop.view.pdf.invert": 0.9,
     "latex-workshop.latex.outDir": "%DIR%/build/%DOCFILE%",
-    "latex-workshop.latex.autoBuild.run": "onFileChange",
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    // === extensión: svg ===
+    "svg.preview.transparencyGrid": false,
+    "svg.preview.boundingBox": false,
+    // === extension: Material Icon Theme ===
+    "material-icon-theme.opacity": 0.9,
     // === extensión: Tabout ===
     "tabout.charactersToTabOutFrom": [
         {
@@ -253,6 +341,93 @@
             "open": ",",
             "close": ","
         },
+    ],
+    // === Extension: Docs view ===
+    "docsView.documentationView.updateMode": "live",
+    // === Extension: Error Lens ===
+    "errorLens.onSave": true,
+    "errorLens.messageEnabled": false,
+    "errorLens.onSaveTimeout": 1000,
+    "errorLens.fontFamily": "Monaspace Krypton",
+    "errorLens.fontStyleItalic": false,
+    "errorLens.alignMessage": {
+        "start": 0,
+        "end": 0,
+        "minimumMargin": 0
+    },
+    "errorLens.enabledDiagnosticLevels": [
+        "error",
+        "warning",
+        "info"
+    ],
+    "errorLens.padding": "2px 1ch",
+    "errorLens.messageBackgroundMode": "message",
+    "errorLens.statusBarMessageType": "activeLine",
+    "errorLens.statusBarCommand": "goToLine",
+    "errorLens.statusBarMessageEnabled": true,
+    "errorLens.statusBarColorsEnabled": true,
+    "errorLens.statusBarMessageAlignment": "left",
+    "errorLens.excludeBySource": [
+        "xml(cvc-elt.1.a)"
+    ],
+    // === Better Comments ===
+    "better-comments.highlightPlainText": false,
+    "better-comments.multilineComments": true,
+    "better-comments.tags": [
+        {
+            "tag": "!!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": true,
+            "italic": false
+        },
+        {
+            "tag": "??",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "!-",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "===",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "TODO",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#505050",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": true
+        }
     ]
     // === FIN DE ARCHIVO ===
 }
