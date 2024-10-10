@@ -4,12 +4,15 @@
 
 > Theme based on: [Monokai Night Theme](https://github.com/fabiospampinato/vscode-monokai-night.git) of *@Fabio Spampinato*.
 
-## Theme is target and tested for next languages (for now):
+## Theme is target and tested for next languages and markup text (for now):
 
 - **Python**
 - **Rust**
-- **TOML**
+- **Shell**
+- **Slint**
 - **JSON**
+- **TOML**
+- **XML**
 
 ## Color semantic palette
 
@@ -19,10 +22,12 @@
 - ![#ef5555](https://placehold.co/15x15/ef5555/ef5555.png) `#ef5555`: imperative instructions (functions, methods)
 - ![#858585](https://placehold.co/15x15/858585/858585.png) `#858585`: parameters and unused variables (with dashed underline)
 - ![#ff7d39](https://placehold.co/15x15/ff7d39/ff7d39.png) `#ff7d39`: keywords language and refs, deref, unpacking symbols
-- ![#707070](https://placehold.co/15x15/707070/707070.png) `#707070`: comments, documentation strings
+- ![#555555](https://placehold.co/15x15/555555/555555.png) `#555555`: comments, documentation strings
 - ![#ef5555](https://placehold.co/15x15/ef5555/ef5555.png) `#ef5555`: derives and decorators
 - ![#e0e0e0](https://placehold.co/15x15/e0e0e0/e0e0e0.png) `#e0e0e0`: numbers (integers, floats and chars)
 - ![#c0795d](https://placehold.co/15x15/c0795d/c0795d.png) `#c0795d`: strings
+- ![#e0e0e0](https://placehold.co/15x15/e0e0e0/e0e0e0.png) `#e0e0e0`: main foreground
+- ![#121212](https://placehold.co/15x15/121212/121212.png) `#121212`: main background
 
 ## Random screen examples
 
